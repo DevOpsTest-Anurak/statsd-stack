@@ -57,6 +57,7 @@ jobs:
         --build-arg METRICSHOST=${{ secrets.METRICSHOST }} \
         --build-arg METRICSPORT=${{ secrets.METRICSPORT }} \
         --build-arg RECORD_METRICS=${{ secrets.RECORD_METRICS }} \
+        -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
         docker image tag $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPOSITORY:latest
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
