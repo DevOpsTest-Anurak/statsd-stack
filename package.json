@@ -1,0 +1,17 @@
+{
+	"name": "devops-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node index.js",
+		"start": "node stats.js"
+	},
+	"author": "",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"dotenv": "^16.3.1",
+		"hot-shots": "^10.0.0",
+		"lynx": "^0.2.0"
+	}
+}
